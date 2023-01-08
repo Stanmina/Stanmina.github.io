@@ -47,10 +47,16 @@
             </nav>
         </header>
         <main class="min-vh-100">
-            <img id="stan-img" class="img-fluid"
-                src=""
-                alt="image of me">
-
+            <!-- Image with Text -->
+            <div class="carousel">
+                <img id="stan-img" class="img-fluid" alt="image of me">
+                <div id="test" class="carousel-caption text-light row" style="left: -25vw; bottom: 40%; padding-bottom: 0px;">
+                    <span class="display-6 col">Stan van der Meijden</span>
+                    <div class="w-100"></div>
+                    <a name="" id="" style="margin-left: auto; margin-right: auto; width: auto; box-sizing: content-box;" class="col-1 btn btn-outline-primary" href="info.html" role="button">About me</a>
+                </div>
+            </div>
+            
             <!-- Carousel -->
             <div class="d-flex justify-content-around mt-5">
                 <div id="carouselExampleCaptions" class="carousel slide w-75" data-bs-ride="carousel">
@@ -61,24 +67,24 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://eg-wel.nl/templates/yootheme/cache/59/logo-59fe7136.webp" style="aspect-ratio: 16/9; object-fit: none;" class="d-block w-100" alt="...">
+                            <img src="https://eg-wel.nl/templates/yootheme/cache/59/logo-59fe7136.webp" style="max-height: 500px; aspect-ratio: 16/9; object-fit: none;" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>EG-Wel</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <p>Een top stage, en een leuke werkgever.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://yt3.ggpht.com/ytc/AMLnZu_xuzbc9v_cz7DUY0Vp8dsU2G9WSPVSCYySuB4G3w=s900-c-k-c0x00ffffff-no-rj" style="aspect-ratio: 16/9; object-fit: scale-down;" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                            <img src="https://yt3.ggpht.com/ytc/AMLnZu_xuzbc9v_cz7DUY0Vp8dsU2G9WSPVSCYySuB4G3w=s900-c-k-c0x00ffffff-no-rj" style="max-height: 500px; aspect-ratio: 16/9; object-fit: scale-down;" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h5>ROC van Twente</h5>
+                                <p>Software Developer opleiding.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://eg-wel.nl/templates/yootheme/cache/59/logo-59fe7136.webp" style="aspect-ratio: 16/9; object-fit: none;" style="mix-blend-mode: color-burn;" class="d-block w-100" alt="...">
+                            <img src="https://eg-wel.nl/templates/yootheme/cache/59/logo-59fe7136.webp" style="max-height: 500px; aspect-ratio: 16/9; object-fit: none;" style="mix-blend-mode: color-burn;" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5>Third slide</h5>
+                                <p>dolor sit amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -135,9 +141,6 @@
 
 </html>
 
-
-
-
 <style>
     @media screen and (min-width: 577px) {      
         #stan-img{      
@@ -148,6 +151,9 @@
     @media screen and (max-width: 576px){   
         #stan-img{      
             content:url("images/smallbackground.png");
+        }
+        #test {
+            display: none !important;
         }
     }
 </style>
